@@ -1,0 +1,3 @@
+$('#malert1').on('closed.bs.alert', function () {
+    // do something...
+  })

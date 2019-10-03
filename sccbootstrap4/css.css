@@ -1,0 +1,217 @@
+
+.kanan1 , .kanan2 , .kanan3 , .kanan4 , .kanan5 , .kanan6{
+    background: burlywood;
+}
+/*
+.navbar-brand:hover{
+    transform: scale(1.2);
+    transition: all 500ms ease;
+}*/
+/*kondisi awal untuk class navbar-brad di tag nav*/
+.navbar-brand {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  /*untuk memberi efek pada saat mouse menuju objek yang berkelaskan navbar-brand*/
+  .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+/*.btn:hover{
+ background-color: black;
+   transform: scale(1.1);
+  border-radius: 30%;
+  transition: all 290ms ease; 
+  box-shadow: inset 0 0 0 3px #3a7999;
+}*/
+
+.btn{
+    
+    background: rgba(0,0,0,0);
+    color: gray;
+    box-shadow: inset 0 0 0 3px #3a7999;
+
+}
+/*.btn:before {
+font-family: Arial, Helvetica, sans-serif;
+content:"\f07a";
+position: absolute;
+top: 11px;
+left: -30px;
+transition: all 200ms ease;
+}
+.btn:hover:before {
+left: 7px;
+}*/
+
+/*.btn:hover {
+    transform: skew(-15deg);
+    transition: all 300ms ease;
+    }*/
+
+/*.btn {
+    border: 3px solid #3a7999;
+}
+.btn:hover {
+    border: 3px dotted #3a7999;
+    color: #3a7999;
+    background: rgba(0,0,0,0);
+}*/
+/*Sebagai tanda kalau tombol ini yang telah di klik*/
+.btn {
+	transform-style: preserve-3d;
+}
+/*menurut saya ini sebagai tampilan tombolnya jika sedang di arahkan oleh mouse atau bisa di sebut mousewhel*/
+.btn:after {
+	top: -50%;
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	background: burlywood;
+	border-radius: 5px;
+	content: 'klik';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+/*Sebagai tampilan animasinya atau sebagai patokan kalau kelas btn telah di kasih efekdengan fungsi hover*/
+.btn:hover {
+	transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+    transition: all 500ms ease;
+}
+
+.btn8 {
+    text-decoration: none;
+    border-radius: 2%;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(238, 11, 11, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn8:before {
+    text-decoration: none;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:greenyellow;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .btn8:hover, .btn8:focus, .btn8:active {
+    text-decoration: none;
+    color: black;
+  }
+  .btn8:hover:before, .btn8:focus:before, .btn8:active:before {
+    text-decoration: none;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+/**/
+.btn9 {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(238, 11, 11, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn9:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .btn9:hover, .btn9:focus, .btn9:active {
+    color: white;
+  }
+  .btn9:hover:before, .btn9:focus:before, .btn9:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+  .form{
+      background-color: burlywood;
+      margin: 40px 0;
+      padding: 20px;
+  }
+ .bout{
+   color: white;
+ }
+  
+.futer{
+    color: black;
+    background-color: white;
+      margin: 20px 5px;
+      padding: 10px;
+      border-radius: 5px;
+  }
+ .jumbo{
+    margin: 20px 0;
+    padding: 10px;
+    
+ }
+.bout  .container {
+
+   background-image: url(../gambartugas4/jalan1.jpg);
+   background-repeat: repeat-x;
+   background-color: gainsboro;
+   margin: 20px 5px;
+   padding: 10px;
+   border-radius: 5px;
+}
+.jumbo123{
+  margin: 20px 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
